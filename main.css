@@ -42,3 +42,15 @@ main>div {
 #tips-section {
   list-style-position: inside;
 }
+
+#toggle-theme {
+  transition: box-shadow 0.4s, transform 0.5s;
+}
+
+#toggle-theme:hover {
+  color: rgb(68, 67, 67);
+  background-color: goldenrod;
+  box-shadow: 0em 0.8em 0.8em -0.4em rgb(235, 213, 88);
+  transform: translateY(-0.3em);
+  cursor: pointer
+}
