@@ -1,12 +1,6 @@
 // double this on each click
 let pennies = 1;
 
-let additionalTips = [
-	'Keep your pennies is a glass jar',
-	'Pick up every penny you find on the ground!',
-	"Don't let your partner know...",
-];
-
 // task 1
 
 // select element with class .quote
@@ -40,11 +34,17 @@ function handleClick() {
 let newP = document.createElement('p');
 // add text
 newP.textContent = 'This penny doubler is cool!🎉';
+
 // append to section element
 const proofSection = document.querySelector('#proof-section');
 proofSection.appendChild(newP);
 
 // add more tips
+let additionalTips = [
+	'Keep your pennies is a glass jar',
+	'Pick up every penny you find on the ground!',
+	"Don't let your partner know...",
+];
 // select tips list
 const tipsList = document.querySelector('#tips-list');
 
@@ -54,3 +54,10 @@ for (let i = 0; i < additionalTips.length; i++) {
 	newLi.textContent = additionalTips[i];
 	tipsList.appendChild(newLi);
 }
+
+// Bonus 1 - remove last tip
+// select last tip from list with last-child
+const lastTip = document.querySelector('#tips-list li:last-child');
+lastTip;
+// use remove method to delete
+lastTip.remove();
