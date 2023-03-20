@@ -1,9 +1,5 @@
+// double this on each click
 let pennies = 1;
-
-function handleClick() {
-	console.log("I'm just to prove it's working!");
-	// 🔺 Remember, this function is already hooked up to the button. You'll learn how to do this yourself soon! Your task is just to write the code inside this function itself.
-}
 
 let additionalTips = [
 	'Keep your pennies is a glass jar',
@@ -25,3 +21,15 @@ const h1 = document.querySelector('h1');
 h1.style.textDecoration = 'underline';
 
 // task 3 - change the title
+document.title = '💸💸💸';
+
+// task 4 - get penny doubler working
+
+// select output
+let output = document.querySelector('output');
+// reassign pennies to double their value on each click
+// use the value as textContent in output
+function handleClick() {
+	pennies *= 2;
+	output.textContent = `${pennies} pennies`;
+}
