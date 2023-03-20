@@ -4,8 +4,12 @@ let pennies = 1;
 // Bonus 3 - toggle dark theme
 const themeButton = document.querySelector('#toggle-theme');
 themeButton.addEventListener('click', () => {
+	const double = document.querySelector('#double');
 	document.documentElement.classList.toggle('dark');
+	double.textContent = `💸`.repeat(10);
 });
+const coolSigns = [`💸`.repeat(10), `💵`.repeat(10)];
+
 /* task 1 - select element with class .quote
  change its textContent */
 const quote = document.querySelector('.quote');
@@ -63,6 +67,5 @@ for (let i = 0; i < additionalTips.length; i++) {
 // Bonus 1 - remove last tip
 // select last tip from list with last-child
 const lastTip = document.querySelector('#tips-list li:last-child');
-lastTip;
 // use remove method to delete
 lastTip.remove();
