@@ -1,11 +1,15 @@
 // double this on each click
 let pennies = 1;
 
-// task 1
-// select element with class .quote
+// Bonus 3 - toggle dark theme
+const themeButton = document.querySelector('#toggle-theme');
+themeButton.addEventListener('click', () => {
+	document.documentElement.classList.toggle('dark');
+});
+/* task 1 - select element with class .quote
+ change its textContent */
 const quote = document.querySelector('.quote');
 
-// change its textContent
 quote.textContent = `Your time is limited, so don’t waste it living someone else’s life. - Steve Jobs`;
 
 // task 2 - selecting and changing style
