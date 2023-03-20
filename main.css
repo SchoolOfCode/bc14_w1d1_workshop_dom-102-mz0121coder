@@ -1,12 +1,16 @@
 * {
   box-sizing: border-box;
-  text-align: center;
+}
+
+img {
+  max-width: 80%;
 }
 
 body {
+  text-align: center;
   font-family: "Grandstander", cursive;
   font-size: 1.1em;
-  /* background: linear-gradient(to right, #c9d6ff, #e2e2e2); */
+  background-color: #F6FFF8;
 }
 
 header {
@@ -34,9 +38,9 @@ main>div {
 }
 
 .dark {
-  background-image: url('https://wallpapercave.com/dwp2x/jL9RP8z.jpg');
+  background-color: #0E0004;
   background-size: cover;
-  color: white;
+  color: gold;
 }
 
 #tips-section {

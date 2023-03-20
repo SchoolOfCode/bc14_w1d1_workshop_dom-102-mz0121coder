@@ -4,8 +4,8 @@ let pennies = 1;
 // Bonus 3 - toggle dark theme
 const themeButton = document.querySelector('#toggle-theme');
 themeButton.addEventListener('click', () => {
-	document.documentElement.classList.toggle('dark');
-	document.querySelector('#last-link').style.color = 'white';
+	document.body.classList.toggle('dark');
+	document.querySelector('a').classList.toggle('dark');
 });
 
 /* task 1 - select element with class .quote
