@@ -33,3 +33,13 @@ function handleClick() {
 	pennies *= 2;
 	output.textContent = `${pennies} pennies`;
 }
+
+// task 5 - creating elements
+
+// create p element
+let newP = document.createElement('p');
+// add text
+newP.textContent = 'This penny doubler is cool!🎉';
+// append to section element
+const proofSection = document.querySelector('#proof-section');
+proofSection.appendChild(newP);
