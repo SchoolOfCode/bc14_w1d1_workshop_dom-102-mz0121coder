@@ -4,11 +4,9 @@ let pennies = 1;
 // Bonus 3 - toggle dark theme
 const themeButton = document.querySelector('#toggle-theme');
 themeButton.addEventListener('click', () => {
-	const double = document.querySelector('#double');
 	document.documentElement.classList.toggle('dark');
-	double.textContent = `💸`.repeat(10);
+	document.querySelector('#last-link').style.color = 'white';
 });
-const coolSigns = [`💸`.repeat(10), `💵`.repeat(10)];
 
 /* task 1 - select element with class .quote
  change its textContent */
@@ -34,7 +32,7 @@ let output = document.querySelector('output');
 function handleClick() {
 	pennies *= 2;
 	output.textContent = `${pennies} pennies`;
-	document.title = '💸💸💸';
+	document.title = `${pennies} pennies`;
 }
 
 // task 5 - creating elements

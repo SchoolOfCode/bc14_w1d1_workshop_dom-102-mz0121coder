@@ -34,7 +34,8 @@ main>div {
 }
 
 .dark {
-  background-color: darkblue;
+  background-image: url('https://wallpapercave.com/dwp2x/jL9RP8z.jpg');
+  background-size: cover;
   color: white;
 }
 
