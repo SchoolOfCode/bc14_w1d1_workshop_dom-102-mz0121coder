@@ -2,7 +2,6 @@
 let pennies = 1;
 
 // task 1
-
 // select element with class .quote
 const quote = document.querySelector('.quote');
 
@@ -15,7 +14,7 @@ const h1 = document.querySelector('h1');
 h1.style.textDecoration = 'underline';
 
 // task 3 - change the title
-document.title = '💸💸💸';
+// document.title = '💸💸💸';
 
 // task 4 - get penny doubler working
 
@@ -23,9 +22,11 @@ document.title = '💸💸💸';
 let output = document.querySelector('output');
 // reassign pennies to double their value on each click
 // use the value as textContent in output
+// Bonus 2 - change title on click
 function handleClick() {
 	pennies *= 2;
 	output.textContent = `${pennies} pennies`;
+	document.title = '💸💸💸';
 }
 
 // task 5 - creating elements
