@@ -43,3 +43,14 @@ newP.textContent = 'This penny doubler is cool!🎉';
 // append to section element
 const proofSection = document.querySelector('#proof-section');
 proofSection.appendChild(newP);
+
+// add more tips
+// select tips list
+const tipsList = document.querySelector('#tips-list');
+
+// create new element for list item, set textContent to additionalTips[i], add to list
+for (let i = 0; i < additionalTips.length; i++) {
+	let newLi = document.createElement('li');
+	newLi.textContent = additionalTips[i];
+	tipsList.appendChild(newLi);
+}
